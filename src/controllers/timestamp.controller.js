@@ -2,6 +2,7 @@ import { timestampConverterService, timestampGeneratorService } from "../service
 
 const timestampConverterController = (inputDate) => {
     if (inputDate) {
+        console.log(inputDate); 
         return timestampConverterService(inputDate);
     }
     return timestampGeneratorService();
